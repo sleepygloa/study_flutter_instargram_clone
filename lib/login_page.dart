@@ -4,7 +4,7 @@ class LoginPage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Container(
-        child:Text('탭 페이지');
+        child:Text('탭 페이지')
     );
   }
 }
