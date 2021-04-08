@@ -53,13 +53,13 @@ class HomePage extends StatelessWidget {
                                   SizedBox(
                                     width:70.0,
                                     height:70.0,
-                                    child: Image.network('https://miro.medium.com/max/4000/0*8l-9ohGsAquPq_rZ.jpeg', fit:BoxFit.cover),
+                                    child: Image.network('https://play-lh.googleusercontent.com/TVVIZnPw3rAi9o1DfCRH97UbbSRGqLo7fFKoDIYhQZ2j1B2T-fOQkDuLlCqki-gYKg', fit:BoxFit.cover),
                                   ),
                                   Padding(padding: EdgeInsets.all(1.0)),
                                   SizedBox(
                                     width:70.0,
                                     height:70.0,
-                                    child: Image.network('https://image.edaily.co.kr/images/Photo/files/NP/S/2019/08/PS19082300690.jpg', fit:BoxFit.cover),
+                                    child: Image.network('https://play-lh.googleusercontent.com/TVVIZnPw3rAi9o1DfCRH97UbbSRGqLo7fFKoDIYhQZ2j1B2T-fOQkDuLlCqki-gYKg', fit:BoxFit.cover),
                                   ),
                                   Padding(padding: EdgeInsets.all(1.0)),
                                   SizedBox(

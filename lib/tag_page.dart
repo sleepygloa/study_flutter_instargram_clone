@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_instargram_clone/account_page.dart';
 
 import 'home_page.dart';
 
@@ -12,7 +13,7 @@ class _TabPageState extends State<TabPage> {
   List _page = [
     HomePage(),
     Text('page2'),
-    Text('page3'),
+    AccountPage(),
   ];
 
   @override
