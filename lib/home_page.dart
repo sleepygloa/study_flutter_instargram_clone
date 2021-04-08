@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                                 width:80.0,
                                 height:80.0,
                                 child:CircleAvatar(
-                                  backgroundImage: NetworkImage('https://trialxxerror.medium.com/?source=post_page-----1474e54b55a0--------------------------------'),
+                                  backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2018/10/24/19/58/babys-hand-3771123__340.jpg'),
                                 )
                               ),
                               Padding(padding: EdgeInsets.all(8.0)),
@@ -53,19 +53,19 @@ class HomePage extends StatelessWidget {
                                   SizedBox(
                                     width:70.0,
                                     height:70.0,
-                                    child: Image.network('https://play-lh.googleusercontent.com/TVVIZnPw3rAi9o1DfCRH97UbbSRGqLo7fFKoDIYhQZ2j1B2T-fOQkDuLlCqki-gYKg', fit:BoxFit.cover),
+                                    child: Image.network('https://cdn.pixabay.com/photo/2018/10/24/19/58/babys-hand-3771123__340.jpg', fit:BoxFit.cover),
                                   ),
                                   Padding(padding: EdgeInsets.all(1.0)),
                                   SizedBox(
                                     width:70.0,
                                     height:70.0,
-                                    child: Image.network('https://play-lh.googleusercontent.com/TVVIZnPw3rAi9o1DfCRH97UbbSRGqLo7fFKoDIYhQZ2j1B2T-fOQkDuLlCqki-gYKg', fit:BoxFit.cover),
+                                    child: Image.network('https://cdn.pixabay.com/photo/2021/04/03/15/24/poppy-6147973__340.jpg', fit:BoxFit.cover),
                                   ),
                                   Padding(padding: EdgeInsets.all(1.0)),
                                   SizedBox(
                                     width:70.0,
                                     height:70.0,
-                                    child: Image.network('https://play-lh.googleusercontent.com/TVVIZnPw3rAi9o1DfCRH97UbbSRGqLo7fFKoDIYhQZ2j1B2T-fOQkDuLlCqki-gYKg', fit:BoxFit.cover),
+                                    child: Image.network('https://cdn.pixabay.com/photo/2021/02/02/21/44/kale-5975540__340.jpg', fit:BoxFit.cover),
                                   ),
                                 ],
                               ),
