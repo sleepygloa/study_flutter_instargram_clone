@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'create_page.dart';
+
 class SearchPage extends StatefulWidget {
   @override
   _SearchPageState createState() => _SearchPageState();
@@ -10,7 +12,13 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _buildBody(),
-      floatingActionButton: FloatingActionButton(onPressed: null,
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>CreatePage())
+          );
+        },
         child:Icon(Icons.create),
         backgroundColor: Colors.blue,
       ),
