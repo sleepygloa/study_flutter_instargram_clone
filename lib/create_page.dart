@@ -62,6 +62,5 @@ class _CreatePageState extends State<CreatePage> {
     setState(() {
       _image = image;
     });
-
   }
 }
