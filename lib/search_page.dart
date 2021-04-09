@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -30,20 +31,35 @@ class _SearchPageState extends State<SearchPage> {
   }
 
   Widget _buildBody() {
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        childAspectRatio: 1.0,
-        mainAxisSpacing: 1.0,
-        crossAxisSpacing: 1.0
-      ),
-      itemCount: 5,
-      itemBuilder: (context, index){
-        return _buildListItem(context, index);
-      });
+    return StreamBuilder(
+      stream: Firestore.instance.collection('post').snapshots(),
+      builder: (BuildContext context, AsyncSnapshot snapshot){
+        if(!snapshot.hasData){
+          return Center(child:CircularProgressIndicator());
+        }
+
+        var items = snapshot.data.documents ?? [];
+
+        return GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            childAspectRatio: 1.0,
+            mainAxisSpacing: 1.0,
+            crossAxisSpacing: 1.0
+          ),
+          itemCount: items.length,
+          itemBuilder: (context, index){
+            return _buildListItem(context, index);
+          });
+      }
+    );
+
   }
 
-  Widget _buildListItem(BuildContext context, int index) {
-    return Image.network('https://cdn.pixabay.com/photo/2021/04/03/15/24/poppy-6147973__340.jpg');
+  Widget _buildListItem(context, document) {
+    return Image.network(
+      document['photoUrl'],
+      fit: BoxFit.cover
+    );
   }
 }
