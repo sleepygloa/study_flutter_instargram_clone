@@ -1,6 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  final FirebaseUser user;
+
+  HomePage(this.user);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +45,7 @@ class HomePage extends StatelessWidget {
                                 width:80.0,
                                 height:80.0,
                                 child:CircleAvatar(
-                                  backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2018/10/24/19/58/babys-hand-3771123__340.jpg'),
+                                  backgroundImage: NetworkImage(user.photoUrl),
                                 )
                               ),
                               Padding(padding: EdgeInsets.all(8.0)),
